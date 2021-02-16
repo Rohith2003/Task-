@@ -1,0 +1,12 @@
+#takes a string and prints the frequency
+
+most_frequent = input("Please enter a string:")
+dict = {} 
+  
+for char in most_frequent: 
+   if char in dict: 
+      dict[char] += 1
+   else: 
+      dict[char] = 1
+
+print ("Per char frequency in '{}' is :\n {}".format(most_frequent, str(dict)))
